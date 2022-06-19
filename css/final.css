@@ -1,0 +1,367 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+
+/* The navigation menu */
+ .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: lightblue;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: lightblue;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  } 
+
+  footer { 
+
+    background-color: lightgray; 
+
+    padding-top: 50px; 
+
+    padding-bottom: 50px; 
+
+      
+
+} 
+
+::selection {
+  color: #000; 
+  background: #ff0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin: auto;
+  background: lightgrey;
+  line-height: 2.5em;
+}
+
+div.wrapper {
+  background-color: white;
+  overflow: auto;
+}
+
+p {
+  margin: 1em 1em;
+  font-size: larger;
+  
+}
+
+
+h2, h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-left: 1em;
+  line-height: 1em;
+}
+
+a {
+  color:darkcyan;
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
+  background-color: darkcyan;
+  text-decoration: none;
+}
+
+/*
+iframe {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 5700px;
+  border: 2px solid darkcyan;
+}
+*/
+
+footer { 
+
+  background-color: lightgray; 
+
+  padding-top: 50px; 
+
+  padding-bottom: 50px; 
+} 
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+  div.wrapper {
+      width: 80%;
+      margin: auto;
+  }
+  
+  h1 {
+      width: 79%;
+      padding-left: 1%;
+  }
+  
+  img.desktop {
+      width: 50%;
+      float: left;
+      margin-right: 1em;
+  }
+  
+  img.tablet, img.phone {
+      display: none;
+  }
+  
+  p {
+      margin: 1em;
+  }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+  div.wrapper {
+      width: 90%;
+      margin: auto;
+  }
+  
+  h1 {
+      width: 89%;
+      padding-left: 1%;
+  }
+  
+  img.tablet {
+      width: 50%;
+      float: right;
+      margin-left: 1em;
+  }
+  
+  img.desktop, img.phone {
+      display: none;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+  div.wrapper {
+      width: 100%;
+  }
+  
+  h1 {
+      width: 99%;
+      padding-left: 1%;
+  }
+  
+  img.phone {
+      width: 100%;
+  }
+  
+  img.desktop, img.tablet {
+      display: none;
+  }
+}
+
+
+
+
+::selection {
+  color: #000; 
+  background: #ff0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin: auto;
+  background: lightgrey;
+  line-height: 2.5em;
+}
+
+div.wrapper {
+  background-color: white;
+  overflow: auto;
+}
+
+p {
+  margin: 1em 1em;
+}
+
+
+h2, h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-left: 1em;
+  line-height: 1em;
+}
+
+a {
+  color:darkcyan;
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
+  background-color: darkcyan;
+  text-decoration: none;
+}
+
+/*
+iframe {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 5700px;
+  border: 2px solid darkcyan;
+}
+*/
+
+footer { 
+
+  background-color: lightgray; 
+
+  padding-top: 50px; 
+
+  padding-bottom: 50px; 
+
+    
+
+} 
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+  div.wrapper {
+      width: 80%;
+      margin: auto;
+  }
+  
+  h1 {
+      width: 79%;
+      padding-left: 1%;
+  }
+  
+  img.desktop {
+      width: 50%;
+      float: left;
+      margin-right: 1em;
+  }
+  
+  img.tablet, img.phone {
+      display: none;
+  }
+  
+  p {
+      margin: 1em;
+  }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+  div.wrapper {
+      width: 90%;
+      margin: auto;
+  }
+  
+  h1 {
+      width: 89%;
+      padding-left: 1%;
+  }
+  
+  img.tablet {
+      width: 50%;
+      float: right;
+      margin-left: 1em;
+  }
+  
+  img.desktop, img.phone {
+      display: none;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+  div.wrapper {
+      width: 100%;
+  }
+  
+  h1 {
+      width: 99%;
+      padding-left: 1%;
+  }
+  
+  img.phone {
+      width: 100%;
+  }
+  
+  img.desktop, img.tablet {
+      display: none;
+  }
+}
+
+
+
+ 
+
